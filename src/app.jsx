@@ -21,7 +21,7 @@ class App extends Component {
       <div id="app">
         <Router onChange={this.handleRoute}>
           <Home path="/" />
-          <Game path="/game" cards={generateGridCards()} />
+          <Game path="/game" cards={this.generateGridCards()} />
           <Win path="/win" />
         </Router>
       </div>
