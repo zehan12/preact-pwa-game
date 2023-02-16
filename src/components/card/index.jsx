@@ -1,12 +1,12 @@
-import style from "./style.css";
+import "./style.css";
 
 const Card = ({ hiddenValue, flipStatus, onClick }) => {
     return (
-        <div class={style.card} data-flipStatus={flipStatus}>
-            <button class={style.front} onClick={onClick}>
+        <div className="card" data-flipStatus={flipStatus}>
+            <button className="front" onClick={onClick}>
                 ?
             </button>
-            <div class={style.back}>{hiddenValue}</div>
+            <div className="back" >{hiddenValue}</div>
         </div>
     );
 }

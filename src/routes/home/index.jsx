@@ -1,15 +1,15 @@
 import { route } from "preact-router";
-import style from "./style.css";
+import "./style.css"
 
 const Home = () => {
     const startGame = () => {
         route("/game");
     };
-    return (<div class={style.home}>
-        <div class={style.head}>
+    return (<div className="home">
+        <div className="head">
             <h2>Match Game</h2>
         </div>
-        <button class={style.button} onClick={startGame}>
+        <button className="button" onClick={startGame}>
             New Game
         </button>
     </div>

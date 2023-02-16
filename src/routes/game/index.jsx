@@ -74,9 +74,9 @@ class Game extends Component {
 
     render(props, state) {
         return (
-            <div class="game">
-                <header class="score">Score: {state.score}</header>
-                <div class="grid">
+            <div className="game">
+                <header className="score">Score: {state.score}</header>
+                <div className="grid">
                     {props.cards.map((card) => (
                         <Card
                             hiddenValue={card.emoji}

@@ -1,5 +1,5 @@
 import { route } from "preact-router";
-import style from "./style.css";
+import "./style.css";
 const Win = () => {
 
     const startGame = () => {
@@ -7,12 +7,12 @@ const Win = () => {
     };
 
     return (
-        <div class={style.win}>
-            <div class={style.head}>
-                <div class={style.emoji}>🎉</div>
+        <div className="win">
+            <div className="head">
+                <div className="emoji">🎉</div>
                 <div>You won!</div>
             </div>
-            <button class={style.button} onClick={startGame}>
+            <button className="button" onClick={startGame}>
                 New Game
             </button>
         </div>
